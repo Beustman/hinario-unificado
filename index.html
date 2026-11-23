@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hinário — instalar</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --p: #2f6fed; --fundo: #f2f6fc; --texto: #18212f; --suave: #5d6b7e; --borda: #d6dfec; --sup: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --fundo: #0e1522; --texto: #e8eef8; --suave: #9aa8bd; --borda: #2a3650; --sup: #171f30; --p: #6ea1ff; } }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5; }
+  main { max-width: 560px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { color: var(--p); font-size: 28px; margin: 0 0 4px; } h1 span { font-size: 40px; vertical-align: -4px; }
+  .sub { color: var(--suave); margin: 0 0 20px; }
+  .cartao { background: var(--sup); border: 1px solid var(--borda); border-radius: 16px; padding: 16px 18px; margin-bottom: 14px; }
+  .cartao h2 { font-size: 16px; margin: 0 0 8px; color: var(--p); }
+  .botao { display: block; text-align: center; background: var(--p); color: #fff; text-decoration: none; font-weight: 700; padding: 14px; border-radius: 12px; margin: 10px 0; font-size: 17px; }
+  .botao.secundario { background: transparent; color: var(--p); border: 1.5px solid var(--p); }
+  ol { padding-left: 20px; } li { margin-bottom: 6px; }
+  h3 { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--suave); margin: 12px 0 4px; }
+  ul { margin: 0; padding-left: 20px; }
+  code { font-size: 11px; word-break: break-all; color: var(--suave); }
+  .pequeno { font-size: 13px; color: var(--suave); }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>♪</span> Hinário</h1>
+  <p class="sub">Versão 0.3.0 · 2026-11-23 · Hinário Novo (HN) + Hinário Antigo (H, C, S, N)</p>
+
+  <div class="cartao">
+    <h2>Android</h2>
+    <a class="botao" href="https://github.com/Beustman/hinario-unificado/releases/download/v0.3.0/Hinario-0.3.0.apk">Baixar e instalar (99,3 MB)</a>
+    <p class="pequeno">Se o app já está instalado, basta abri-lo: ele avisa da versão nova e atualiza sozinho, mantendo suas configurações e atrelamentos.</p>
+    <ol>
+      <li>Toque em <b>Baixar e instalar</b> e, quando terminar, abra o arquivo (barra de notificações ou pasta Downloads).</li>
+      <li>Na primeira vez o Android pergunta se permite instalar apps desse app (Chrome, Arquivos…): toque em <b>Configurações</b>, ative <b>Permitir desta fonte</b> e volte.</li>
+      <li>Toque em <b>Instalar</b>. Se aparecer "App bloqueado pelo Play Protect", toque em <b>Mais detalhes</b> › <b>Instalar mesmo assim</b>: o app é da igreja e não está na loja.</li>
+    </ol>
+  </div>
+
+  <div class="cartao">
+    <h2>iPhone e iPad</h2>
+    
+    <p class="pequeno">No iPhone a instalação é pela App Store ou pelo TestFlight (link enviado pela igreja). Não é possível instalar por arquivo.</p>
+  </div>
+
+  <div class="cartao">
+    <h2>O que há de novo na 0.3.0</h2>
+    <h3>Importante</h3><ul><li>Seus dados ficam guardados: os atrelamentos (mesclas) que você fez entre o hinário antigo e o novo, os hinos recentes e as suas configurações continuam no aparelho depois de atualizar. Não é preciso desinstalar nada.</li><li>Esta atualização é grande (cerca de 100 MB) porque agora todas as partituras vêm dentro do app. Se puder, atualize usando o Wi-Fi.</li><li>As próximas melhorias também vão chegar por aqui: o app avisa sozinho quando houver uma versão nova, e é só tocar em "Atualizar agora".</li></ul><h3>Novidades</h3><ul><li>Partituras do Hinário Novo dentro do app: as 1100 partituras foram convertidas de PDF para imagem e abrem na hora, sem internet.</li><li>Leitor de partituras em tela cheia: só a partitura na tela, sem barras. Um toque no centro mostra ou esconde os controles.</li><li>Zoom com os dedos: afaste ou aproxime dois dedos (pinça) para ampliar; toque duplo amplia ou volta ao tamanho normal; arraste para mover.</li><li>Modo deitado: botão para travar a tela deitada (ou em pé) enquanto a partitura está aberta.</li><li>Paginação em telas de linhas inteiras: a troca pula direto para a próxima tela, no tamanho exato, sem cortar nenhuma linha no meio.</li><li>Troca de tela por toque (laterais da tela ou deslizar), por tempo (a cada N segundos) ou por uma ordem personalizada (ex.: tela 1 por 20 s → tela 4 → tela 2 → tela 4), salva para cada partitura.</li><li>Exportar e importar as configurações das partituras (para guardar ou passar para outro músico), em Ajustes › Partituras.</li></ul><h3>Melhorias</h3><ul><li>A tela não apaga enquanto a partitura está aberta.</li><li>Partituras com mais de uma página aparecem como uma só, em sequência.</li><li>O PDF original continua disponível no Google Drive pelo menu do leitor.</li></ul>
+  </div>
+
+  <div class="cartao">
+    <h2>Conferência de segurança</h2>
+    <p class="pequeno">O app só instala atualizações baixadas por HTTPS deste endereço e cujo SHA-256 bate com o publicado aqui. Impressão digital do APK desta versão:</p>
+    <code>aba7f172f61ff2d0c91fafe431d37f0d969e2974e392a70a5f24fb992da38d9c</code>
+  </div>
+</main>
+</body>
+</html>
